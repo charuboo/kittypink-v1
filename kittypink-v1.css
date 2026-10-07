@@ -1,0 +1,442 @@
+/**
+ * @name ClearVision V7 Pastel Pink
+ * @author ClearVision Team
+ * @version 7.0.1
+ * @description ClearVision V7 with a soft pastel pink colour palette and custom background.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+
+/* =========================
+   THEME SETTINGS
+   ========================= */
+
+:root {
+  /* Main colours */
+  --main-color: #f3a6c8;
+  --hover-color: #e88bb5;
+  --success-color: #a8d8b9;
+  --danger-color: #e99aaa;
+
+  /* Text colours */
+  --text-normal: #ffffff;
+  --text-muted: #d9c5ce;
+  --channels-default: #e8d6de;
+  --interactive-normal: #ead8e0;
+  --interactive-hover: #ffffff;
+  --interactive-active: #ffffff;
+  --interactive-muted: #9f8c94;
+
+  /* Background */
+  --background-image: url("https://cdn.phototourl.com/member/2026-10-06-a560c599-a898-497a-9def-a738e4dd4daa.png");
+  --background-position: center;
+  --background-size: cover;
+  --background-attachment: fixed;
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+
+  /* Home icon */
+  --home-icon: url("https://clearvision.github.io/icons/discord.svg");
+  --home-position: center;
+  --home-size: 40px;
+
+  /* Background colours */
+  --background-primary: rgba(20, 12, 16, 0.75);
+  --background-secondary: rgba(25, 15, 20, 0.75);
+  --background-secondary-alt: rgba(30, 18, 24, 0.8);
+  --background-tertiary: rgba(15, 10, 13, 0.8);
+  --background-floating: rgba(30, 18, 24, 0.95);
+  --background-mobile-primary: rgba(20, 12, 16, 0.9);
+  --background-mobile-secondary: rgba(25, 15, 20, 0.9);
+  --background-modifier-hover: rgba(243, 166, 200, 0.08);
+  --background-modifier-active: rgba(243, 166, 200, 0.12);
+  --background-modifier-selected: rgba(243, 166, 200, 0.16);
+  --background-modifier-accent: rgba(243, 166, 200, 0.2);
+
+  /* Cards */
+  --card-color: rgba(20, 12, 16, 0.65);
+  --card-color-hover: rgba(243, 166, 200, 0.12);
+
+  /* Borders */
+  --border-color: rgba(243, 166, 200, 0.2);
+  --border-hover-color: rgba(243, 166, 200, 0.4);
+
+  /* Scrollbars */
+  --scrollbar-thin-thumb: rgba(243, 166, 200, 0.45);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: rgba(243, 166, 200, 0.45);
+  --scrollbar-auto-track: rgba(0, 0, 0, 0.15);
+  --scrollbar-auto-scrollbar-color-thumb: rgba(243, 166, 200, 0.45);
+  --scrollbar-auto-scrollbar-color-track: transparent;
+
+  /* Fonts */
+  --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Radius */
+  --radius: 12px;
+}
+
+/* =========================
+   PASTEL PINK ACCENTS
+   ========================= */
+
+::selection {
+  background: rgba(243, 166, 200, 0.45);
+  color: #ffffff;
+}
+
+/* Links */
+a {
+  color: #f3a6c8 !important;
+}
+
+a:hover {
+  color: #e88bb5 !important;
+}
+
+/* Buttons */
+button[class*="lookFilled"] {
+  background-color: #f3a6c8 !important;
+  color: #24151d !important;
+}
+
+button[class*="lookFilled"]:hover {
+  background-color: #e88bb5 !important;
+}
+
+/* Mention */
+.mention {
+  background: rgba(243, 166, 200, 0.18) !important;
+  color: #f3a6c8 !important;
+}
+
+.mention:hover {
+  background: rgba(243, 166, 200, 0.28) !important;
+}
+
+/* =========================
+   CHANNELS
+   ========================= */
+
+.wrapper-1ucjTd {
+  color: #e8d6de;
+}
+
+.wrapper-1ucjTd:hover {
+  color: #ffffff;
+  background: rgba(243, 166, 200, 0.08);
+}
+
+.wrapper-1ucjTd.modeSelected-3DmyhH {
+  color: #ffffff;
+  background: rgba(243, 166, 200, 0.16);
+}
+
+.wrapper-1ucjTd.modeSelected-3DmyhH .name-28HaxV {
+  color: #f3a6c8;
+}
+
+/* =========================
+   SERVER LIST
+   ========================= */
+
+.listItem-2P_4kh {
+  transition: transform 0.2s ease;
+}
+
+.listItem-2P_4kh:hover {
+  transform: translateY(-2px);
+}
+
+.wrapper-28eC3z {
+  background-color: rgba(243, 166, 200, 0.12);
+}
+
+.wrapper-28eC3z.selected-1Drb7Z {
+  background-color: rgba(243, 166, 200, 0.25);
+}
+
+/* =========================
+   SERVER / HOME ICON
+   ========================= */
+
+.childWrapper-1j_1ub {
+  background-color: rgba(243, 166, 200, 0.15) !important;
+}
+
+.childWrapper-1j_1ub:hover {
+  background-color: #f3a6c8 !important;
+}
+
+.selected-1Drb7Z .childWrapper-1j_1ub {
+  background-color: #f3a6c8 !important;
+  color: #24151d !important;
+}
+
+/* =========================
+   CHAT
+   ========================= */
+
+.message-2CShn3:hover {
+  background-color: rgba(243, 166, 200, 0.035) !important;
+}
+
+.cozy-VmLDNB .timestamp-p1Df1m {
+  color: #bfaab3;
+}
+
+.header-2jRmjb {
+  color: #f3a6c8;
+}
+
+/* Reply / thread */
+.repliedMessage-3Z6XBG:before {
+  border-color: #f3a6c8 !important;
+}
+
+.replying-eiJ6Xu {
+  background-color: rgba(243, 166, 200, 0.08) !important;
+}
+
+/* =========================
+   CHAT BOX
+   ========================= */
+
+.channelTextArea-1FufC0 {
+  background-color: rgba(20, 12, 16, 0.75) !important;
+  border: 1px solid rgba(243, 166, 200, 0.12);
+  border-radius: var(--radius);
+}
+
+.channelTextArea-1FufC0:focus-within {
+  border-color: rgba(243, 166, 200, 0.45);
+}
+
+/* =========================
+   UNREAD / NOTIFICATIONS
+   ========================= */
+
+.unread-36eUEm {
+  background-color: #f3a6c8 !important;
+}
+
+.numberBadge-37OJ3S {
+  background-color: #e88bb5 !important;
+}
+
+.bar-2eAy0a {
+  background-color: #f3a6c8 !important;
+}
+
+/* =========================
+   MEMBERS
+   ========================= */
+
+.member-2gU6Ar:hover {
+  background-color: rgba(243, 166, 200, 0.08) !important;
+}
+
+.member-2gU6Ar.selected-1-Z4So {
+  background-color: rgba(243, 166, 200, 0.15) !important;
+}
+
+/* =========================
+   USER PANEL
+   ========================= */
+
+.container-YkUktl {
+  background-color: rgba(20, 12, 16, 0.85) !important;
+}
+
+.avatar-1EWyVD {
+  border-color: #f3a6c8 !important;
+}
+
+/* =========================
+   SETTINGS
+   ========================= */
+
+.item-3XjbnG[aria-selected="true"] {
+  background-color: rgba(243, 166, 200, 0.16) !important;
+  color: #f3a6c8 !important;
+}
+
+.item-3XjbnG:hover {
+  background-color: rgba(243, 166, 200, 0.08) !important;
+}
+
+/* =========================
+   SLIDERS
+   ========================= */
+
+.barFill-2Bh7CX {
+  background-color: #f3a6c8 !important;
+}
+
+.grabber-2GQyvM {
+  background-color: #ffffff !important;
+  border-color: #f3a6c8 !important;
+}
+
+/* =========================
+   CHECKBOXES
+   ========================= */
+
+.checked-1pZh2h {
+  background-color: #f3a6c8 !important;
+  border-color: #f3a6c8 !important;
+}
+
+/* =========================
+   SWITCHES
+   ========================= */
+
+.container-1QtPKm[aria-checked="true"] {
+  background-color: #f3a6c8 !important;
+}
+
+/* =========================
+   SCROLLBARS
+   ========================= */
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(243, 166, 200, 0.45) !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(243, 166, 200, 0.65) !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* =========================
+   TOOLTIPS
+   ========================= */
+
+.tooltip-14MtrL {
+  background-color: rgba(25, 15, 20, 0.98) !important;
+  border: 1px solid rgba(243, 166, 200, 0.25);
+}
+
+.tooltip-14MtrL .tooltipPointer-3Lq7xA {
+  border-top-color: rgba(25, 15, 20, 0.98) !important;
+}
+
+/* =========================
+   MODALS
+   ========================= */
+
+.root-1CAIjD {
+  background-color: rgba(25, 15, 20, 0.97) !important;
+}
+
+.footer-31IekZ {
+  background-color: rgba(15, 10, 13, 0.5) !important;
+}
+
+/* =========================
+   SEARCH
+   ========================= */
+
+.searchBar-jGtisZ {
+  background-color: rgba(20, 12, 16, 0.75) !important;
+}
+
+.searchBar-jGtisZ:focus-within {
+  border-color: rgba(243, 166, 200, 0.45);
+}
+
+/* =========================
+   CODE BLOCKS
+   ========================= */
+
+.markup-eYLPri code {
+  background-color: rgba(15, 10, 13, 0.8) !important;
+  border: 1px solid rgba(243, 166, 200, 0.15);
+}
+
+.hljs {
+  background-color: rgba(15, 10, 13, 0.8) !important;
+}
+
+/* =========================
+   EMBEDS
+   ========================= */
+
+.embedFull-1HGV2S {
+  border-left-color: #f3a6c8 !important;
+}
+
+/* =========================
+   VOICE
+   ========================= */
+
+.voice-3bPYC- {
+  color: #e8d6de;
+}
+
+.voiceUser-3pVQ6D:hover {
+  background-color: rgba(243, 166, 200, 0.08);
+}
+
+/* =========================
+   PINS / THREADS
+   ========================= */
+
+.container-2ebMPP {
+  background-color: rgba(25, 15, 20, 0.95) !important;
+}
+
+.header-3xB4vB {
+  color: #f3a6c8;
+}
+
+/* =========================
+   BACKGROUND OVERLAY
+   ========================= */
+
+.appMount-2yBXZl {
+  background: transparent !important;
+}
+
+body {
+  background: transparent !important;
+}
+
+.app-2CXKsg {
+  background: transparent !important;
+}
+
+/* Keep the custom image visible behind Discord */
+.bg-1QIAus {
+--background-image: url(https://cdn.phototourl.com/member/2026-10-06-068d5310-ea63-4fd4-b405-62305d23b46b.jpg);
+--background-position: center;
+--background-size: cover;
+--background-attachment: fixed;
+--background-filter: none;
+
+/* =========================
+   PASTEL PINK GLOW
+   ========================= */
+
+button:hover,
+.item-3XjbnG:hover,
+.wrapper-1ucjTd:hover {
+  box-shadow: 0 0 8px rgba(243, 166, 200, 0.08);
+}
+
+/* =========================
+   REMOVE EXTRA HTML
+   ========================= */
+
+/*
+   Do not put </style> at the bottom.
+   BetterDiscord themes should be plain CSS.
+*/
